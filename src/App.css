@@ -6,7 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.task{
+  width:80vmin;
+}
+.Task-List{
+  width:81vmin;
+  background-color: #96C2FF;
+  border-radius:5px;
+  padding-bottom: 10px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,7 +22,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #4B6180;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
