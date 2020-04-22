@@ -9,13 +9,13 @@ class Task extends Component{
   }
   createTask() {
   const item = this.state.itemArray;
-  item.push({})
+  const task =''
+  item.push({task})
   this.setState({itemArray: item})
 }
 removeTask= (index)=>{
   this.state.itemArray.splice(index,1);
   this.setState({renderCondition: true});
-  console.log(this.state.itemArray);
 }
 
 
@@ -28,7 +28,8 @@ render() {
         {this.state.itemArray.map((item, index) => {
           return (
             <div className="task" key={index}>
-              <div contentEditable="true">Wowee
+              <div className="task" contentEditable="true">
+              {item.task}
               </div>
               <button onClick={()=>this.removeTask({index})}> Delete </button>
             </div>
